@@ -1,0 +1,28 @@
+
+@mixin bordered($color, $bgc, $bradius, $padding:5px 10px) {
+    color: $color;
+    background-color: $bgc;
+    border-radius: $bradius;
+    padding: $padding;
+  }
+
+  @mixin  for-phone {
+    @media (min-width: 976px)
+ {  header .header__item .icona{
+   display: none;
+}} }
+@mixin  for-phone {
+@media (max-width: 976px) {
+  header .header__item .header__item-link{
+    display: none;
+  }
+
+}}
+@mixin  for-phone {
+@media (max-width:550px) {
+  header .header__item .header__item-btn{
+ font-size: 10;
+  }
+  
+}
+  }

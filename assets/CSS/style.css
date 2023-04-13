@@ -1,0 +1,101 @@
+header .header__item .header__item-link > ul, header .header__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0 0;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 0 0;
+  background-color: white;
+}
+header .header__item {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+header .header__item .header__item-logo {
+  font-size: 30px;
+}
+header .header__item .header__item-logo h4 span {
+  color: red;
+}
+
+header .header__item .header__item-link {
+  width: 500px;
+  margin: 0 auto;
+}
+header .header__item .header__item-link > ul {
+  margin: 0 auto;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  gap: 10px;
+}
+header .header__item .header__item-link > ul .item-link > a {
+  color: black;
+}
+header .header__item .header__item-link > ul li {
+  list-style: none;
+}
+header .header__item .header__item-link > ul li a {
+  color: rgba(0, 0, 0, 0.517);
+  text-decoration: none;
+  transition: 0.3s;
+}
+header .header__item .header__item-link > ul li a:hover {
+  color: black;
+}
+
+header .header__item .drop-down {
+  position: relative;
+}
+header .header__item .drop-down .drop-down-item {
+  list-style: none;
+  position: absolute;
+  top: 45px;
+  left: -10px;
+  background-color: white;
+  width: 100px;
+  height: 90px;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .header__item .drop-down:hover .drop-down-item {
+  top: 25px;
+  left: 5px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__item-link > ul li a:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid red;
+  visibility: visible;
+  transition: 2s;
+}
+
+.header__item .header__item-btn {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.header__item .header__item-btn:hover {
+  background-color: rgba(255, 0, 0, 0.433);
+}/*# sourceMappingURL=style.css.map */
